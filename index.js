@@ -137,11 +137,11 @@ app.use((request, response, next) => {
 })
 
 app.get("/", (request, response) => {
-    response.send("<h1>Hey, this is the home page to my Landmarks in NYC API. Enter /docs in your browser to know what you can do here, xoxo</h1>")
+    response.send("<h1>Heyyyyyyy, this is the home page to my Landmarks in NYC API. Enter /docs in your browser to know what you can do here, xoxo</h1>")
 })
 
 app.get("/docs", (request, response) => {
-    response.send("<h1>You can: </h1> <ul><li>/ followed by the borough you want to check. All lowercase. </li><li>/ to get a random landmark out of all my items</li></ul>")
+    response.send("<h1>You can: </h1> <ul><li>/ followed by the borough you want to check. All lowercase. (Example: /bronx to get the landmarks in the Bronx </li><li>Add the /number to the previous path to get the specific landmark in that borough (Example: /bronx/1 gets you the Yankee Stadium</li></ul>")
 })
 
 app.get("/:borough", (request, response) => {
@@ -149,9 +149,10 @@ app.get("/:borough", (request, response) => {
     response.json(nycLandmarks[borough])
 })
 
-app.get("/:borough", (request, response) => {
+app.get("/:borough/:num", (request, response) => {
     const borough = request.params.borough 
-    response.json(nycLandmarks[borough])
+    const num = request.params.num
+    response.json(nycLandmarks[borough][num-1])
 })
 
 

@@ -1,3 +1,12 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/HARs_Oy5)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=17629829&assignment_repo_type=AssignmentRepo)
-# node-template
+## Why did I pick this API topic? 
+Because I was thinking about NYC when I was doing the planning page. 
+
+## Describe my API and the available data enpoints 
+My API gives you three landmarks per borough in NYC. 
+/ goes to the home page. 
+/docs goes to the documentation of my API. 
+/ plus borough name gets you all three landmarks in that one specific borough. (example /bronx)
+/ plus borough and then / plus the # of that landmark gets you that specific landmark. (example /bronx/1)
+
+## How was my experience building my own API server afrer using other APIs as a client in Unit 2? 
+Literally how did those API coder make their website looks cute like there is no way they make the whole style sheet and CSS within that little <> like I can't see anything. 
